@@ -126,7 +126,6 @@ button:hover{
     width:80%;
     margin:0 auto;
 }
-
 .artist{
     width:40%;
     text-align:center;
@@ -136,34 +135,56 @@ button:hover{
 }
 
 @media (max-width: 500px){
-    header nav a{
-        font-size: 1.4rem;
+    /*GENERAL STYLES*/
+    body{
+        font-size: .94rem;
+        line-height: .9;
+    }	
+    h1{
+        font-size: 3.6rem;
     }
-
-    .title-container div {	
-        /* background-position: center;	 */
-        width:100%;
-        height:40vh;
+    a {	
+        font-size:1.5rem;	
     }	
     
-    .artists-container{
-        /* display:flex;
-        justify-content: space-around;
-        width:80%;
-        margin:0 auto; */
-        /* flex-wrap: wrap; */
-        flex-direction: column;
-        width: 100%;
-        border: .1rem solid red;
-        margin: 0 auto;
+    /*HEADER STYLES */
+    nav{
+        width:35%;
+    }
+    nav span{
+        border-left:1.8px solid #626262;
     }
 
-     /* .artist{
-        width:50vw;
-        text-align:center;
-    } */
+    /*Title Section Styles*/
+    .title-container div {	
+        width:100%;
+        height:36vh;
+        margin-bottom:1.5%;
+        line-height: 1.2;
+    }	
+    .title-container hr{
+        width:100%;
+        margin-bottom: 0;
+    }
+    button{
+        padding:1% 3%;
+        font-size: 1.3rem;
+    }
     
+    /*Artists Section Styles */
+    .artists-container{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20%;
+        align-items: center;
+    }
+    .artist{
+        width:65%;
+    }
     .artist img{
         height:auto;
+        width: 70%;
+        margin-bottom: 1rem;
+        margin-top: 2.5rem;
     }
 }
